@@ -20,7 +20,7 @@ function App() {
           text={tariff.text}
           id={tariff.id}
           setCount={setCount}
-          isBoolean={tariff.id == count ? true : false}
+          isBoolean={tariff.id === count ? true : false}
         ></Tariff>
       ))}
     </div>
