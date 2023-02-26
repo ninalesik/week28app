@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Tariff from "./components/Tariff/Tariff";
+import data from "./components/Tariff/data.json";
+import { useState } from "react";
+import styles from "./App.css";
+
+//console.log(props.tariff);
 
 function App() {
+  const [count, setCount] = useState(0);
+  console.log(count);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.App}>
+      {data.map((tariff, index) => (
+        <Tariff
+          key={index}
+          color={tariff.color}
+          name={tariff.name}
+          price={tariff.price}
+          speed={tariff.speed}
+          text={tariff.text}
+          id={tariff.id}
+          setCount={setCount}
+          isBoolean={tariff.id == count ? true : false}
+        ></Tariff>
+      ))}
     </div>
   );
 }

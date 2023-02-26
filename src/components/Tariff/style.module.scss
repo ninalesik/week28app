@@ -1,0 +1,65 @@
+.tariff_card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    text-align: center;
+    width: 15vw;
+    background-color: rgb(241, 241, 241);
+    border: 3px solid white;
+    padding: 1em;
+    
+    
+}
+.tariff_name{
+    color: white;
+    font-size: 1em;
+    
+}
+
+.tariff_price{
+    color: white;
+    font-size: 3em;
+    border: 0px;
+    
+}
+.tariff_speed{
+    border: 3px solid white;
+    color: gray;
+    font-size: 0.7em;
+    border: 0px;
+    }
+.tariff_text{
+    border: 3px solid white;
+    color: gray;
+    font-size: 0.7em;
+    border: 0px;
+    }
+.fee{
+    font-size: 0.3em;
+}
+.blue {
+    background-color: lightblue;
+    color: aliceblue;
+}
+
+.green {
+    background-color: turquoise;
+    color: aliceblue;
+}
+
+.red {
+    background-color: salmon;
+    color: aliceblue;
+}
+
+.dark {
+    background-color: darkslategrey;
+    color: aliceblue;
+}
+
+.active {
+    background-color: white;
+transition: width 2s;
+width: 18vw; 
+box-shadow: 1em 0 .4em grey, -1em 0 .4em grey;}
